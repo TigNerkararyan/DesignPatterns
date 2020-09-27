@@ -1,0 +1,9 @@
+# debug configurations
+DEBUG = True
+SECRET_KEY = "secret_key"
+SERVER_NAME = "127.0.0.1:8000"
+TEMPLATES_AUTO_RELOAD = True
+SQLALCHEMY_DATABASE_URI = "postgresql://postgres:postgres@localhost:5432/mvvm"
+SQLALCHEMY_ECHO = True
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+DATABASE_URL = SQLALCHEMY_DATABASE_URI

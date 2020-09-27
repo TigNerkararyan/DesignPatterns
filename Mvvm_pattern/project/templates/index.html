@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% block flasher %}
+        {{super()}}
+    {% endblock %}
+    <div class="container">
+        <h2>Registration users and booking</h2>
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Is Admin</th>
+              <th>Booking</th>
+            </tr>
+          </thead>
+          <tbody>
+                {% for item in form %}
+                <tr>
+                    <td>{{item.username}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{% if item.isAdmin %} Admin {% else %} Client {% endif %}</td>
+                    <td>{{events[loop.index - 1].date}}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+  </div>
+{% endblock %}

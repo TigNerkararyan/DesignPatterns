@@ -1,0 +1,23 @@
+label[for='admin_input'] {
+    display: flex;
+    align-items: center;
+}
+
+#admin_input {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.reg_btn {
+    padding: 5px 30px;
+    background: #607D8B;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.reg_btn:hover {
+    background: #9e9e9e;
+}
